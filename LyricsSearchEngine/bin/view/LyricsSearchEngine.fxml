@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="14.0" layoutY="110.0" prefHeight="201.0" prefWidth="285.0">
+        <columns>
+          <TableColumn prefWidth="37.0" text="Titel" />
+          <TableColumn prefWidth="91.0" text="Veröffentlicht" />
+            <TableColumn prefWidth="48.0" text="Album" />
+            <TableColumn prefWidth="62.0" text="Künstler" />
+            <TableColumn prefWidth="45.0" text="Genre" />
+        </columns>
+      </TableView>
+      <Button layoutX="60.0" layoutY="53.0" mnemonicParsing="false" text="Suche" />
+      <Text layoutX="433.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextField layoutX="14.0" layoutY="14.0" />
+      <Text layoutX="419.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>
