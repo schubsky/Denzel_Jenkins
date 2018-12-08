@@ -1,6 +1,7 @@
 package application;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
@@ -10,6 +11,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import view.AudioParser;
+import view.DatenbankSongs;
 import view.LyricsSearchEngineController;
 
 
@@ -58,8 +61,16 @@ public class Main extends Application {
 
 	      
 	
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		//System.out.println(getClass().getResource("/view/LyricsSearchEngine.fxml"));
+		try {
+		//DatenbankSongs.Datenbank();
+			AudioParser.metaInformation();
+		}
+		catch(Exception e) {
+			System.out.println("Fehler!");
+		}
+		
 		launch(args);
 	}
 }
